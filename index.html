@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming Portal</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0e0e0e;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        header {
+            background: #111;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #ff0040;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ddd;
+            font-weight: 400;
+        }
+
+        nav a:hover {
+            color: #ff0040;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: url('https://wallpaperaccess.com/full/39632.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 0px 0px 10px #000;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            text-shadow: 0px 0px 10px #000;
+        }
+
+        /* Game Cards */
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin: 40px 0 20px;
+        }
+
+        .games {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 20px 40px;
+        }
+
+        .game-card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 10px #000;
+            transition: 0.3s;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .game-card h3 {
+            padding: 15px;
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .game-card p {
+            padding: 0 15px 15px;
+            margin: 0;
+            color: #bbb;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #bbb;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1>Gaming Portal</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#games">Games</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h2>Welcome to the Ultimate Gaming Portal</h2>
+        <p>Your one-stop destination for trending games, categories, reviews, and updates!</p>
+    </section>
+
+    <!-- Games Section -->
+    <h2 id="games" class="section-title">Featured Games</h2>
+
+    <section class="games">
+        <div class="game-card">
+            <img src="https://wallpaperaccess.com/full/123.jpg" alt="Game 1">
+            <h3>Cyber Warriors</h3>
+            <p>A futuristic action game with thrilling combat and immersive storylines.</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://wallpaperaccess.com/full/84.jpg" alt="Game 2">
+            <h3>Shadow Legends</h3>
+            <p>Step into a dark world with epic battles and mysterious adventures.</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://wallpaperaccess.com/full/28193.jpg" alt="Game 3">
+            <h3>Galaxy Raiders</h3>
+            <p>Explore galaxies, fight alien bosses, and build your own space team.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Gaming Portal — All Rights Reserved.
+    </footer>
+
+</body>
+</html>
